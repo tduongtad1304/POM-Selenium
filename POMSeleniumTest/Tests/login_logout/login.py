@@ -67,9 +67,9 @@ class LoginTesting(unittest.TestCase):
 
         login.click_login()
 
-        message = driver.find_element_by_xpath("").text
+        message = driver.find_element_by_xpath('//*[@id = "spanMessage"]').text
 
-        self.assertEqual(message, "Invalid credentials fake")
+        self.assertEqual(message, "Invalid credentials")
 
     def tearDown(self):
         """tearDown method"""
