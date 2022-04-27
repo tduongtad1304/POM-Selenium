@@ -26,7 +26,7 @@ class LogoutTesting(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
 
-    def test_01_login_valid(self):
+    def test_01_logout_valid(self):
         """test_login method"""
 
         driver = self.driver

@@ -98,6 +98,6 @@ class Locators():
 
     menu_job_note_id = 'jobTitle_note'
 
-    menu_job_title_link_text = 'Animation Design 1'
+    menu_job_title_link_text = 'Automation Tester'
 
     menu_job_title_edit_save_button_id = "btnSave"
