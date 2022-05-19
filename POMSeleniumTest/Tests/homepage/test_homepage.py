@@ -77,7 +77,7 @@ class TestHomePage(unittest.TestCase):
         admin.hover_admin_list()
 
         admin.add_new_user(
-            "Jasmine Morgan", "abcdefed23", "abc.12345", "abc.12345")
+            "Jasmine Morgan", "abcdefgh", "abc.12345", "abc.12345")
 
         time.sleep(3)
 
@@ -116,10 +116,10 @@ class TestHomePage(unittest.TestCase):
         admin.click_admin_job()
 
         admin.click_job_title_add(
-            "Scrum Master 11", "lorem ipsum dolor sit amet", "No note description"),
+            "Testing Software", "lorem ipsum dolor sit amet", "No note description"),
 
-        admin.click_job_title_edit(
-            "Animation Design 2", "lorem ipsum dolor sit amet", "For beginners")
+        # admin.click_job_title_edit(
+        #     "Animation Design ", "lorem ipsum dolor sit amet", "For beginners")
 
         time.sleep(3)
 

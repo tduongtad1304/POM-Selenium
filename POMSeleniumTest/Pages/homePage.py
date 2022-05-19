@@ -87,20 +87,26 @@ class HomePage():
         self.driver.back()
 
     def click_notification_button(self):
-        self.driver.find_element_by_id(
-            self.notification_button_id).click()
+        element = self.driver.find_element_by_id(
+            self.notification_button_id)
+
+        elem = ActionChains(self.driver).move_to_element(element)
+        elem.click().perform()
 
     def click_question_button(self):
-        self.driver.find_element_by_xpath(
-            self.question_mark_xpath).click()
+        element = self.driver.find_element_by_xpath(
+            self.question_mark_xpath)
+
+        elem = ActionChains(self.driver).move_to_element(element)
+        elem.click().perform()
 
     def hover_and_click_marketplace(self):
         element_to_hover_over = self.driver.find_element_by_id(
             self.marketplace_link_id)
         hover = ActionChains(self.driver).move_to_element(
             element_to_hover_over)
-        hover.perform()
-        element_to_hover_over.click()
+        hover.click().perform()
+
         self.driver.back()
 
     def hover_admin_list(self):
